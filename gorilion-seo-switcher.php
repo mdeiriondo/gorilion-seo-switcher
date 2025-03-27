@@ -3,7 +3,7 @@
  * Plugin Name: Gorilion SEO Switcher
  * Plugin URI:
  * Description: Dynamically enable code for Rank Math or Yoast SEO, and update from GitHub.
- * Version:     1.0.0
+ * Version:     1.3
  * Author:      Gorilion
  * Author URI:
  * License:     GPL2
@@ -366,7 +366,7 @@ function gorilion_seo_switcher_inject_functions()
                 $full_url = 'https://' . rtrim($_SERVER['HTTP_HOST'], '/') . '/' . esc_url($request_url);
                 $site_title = esc_html(get_bloginfo('name'));
 
-                echo "<!-- Gorilion meta :: VERSION 1.2 -->";
+                echo "\n<!-- Gorilion meta :: VERSION 1.3 -->\n";
                 echo "<title>{$title}</title>\n";
                 echo "<meta name=\"description\" content=\"{$description}\"/>\n";
                 echo "<meta name=\"keywords\" content=\"{$keywords}\">\n";
